@@ -10,7 +10,8 @@
       "name": "ui-master",
       "source": {
         "source": "url",
-        "url": "https://github.com/hetkothari-st/claude-agents.git"
+        "url": "https://github.com/hetkothari-st/claude-agents.git",
+        "sha": "a02c6c830044f4859bced7b9ebae2545e91dfd3f"
       }
     }
   ]
