@@ -3,5 +3,7 @@ node_modules/
 tests/fixtures/**/.next/
 tests/fixtures/**/dist/
 tests/fixtures/**/node_modules/
+tests/fixtures/**/next-env.d.ts
+*.tsbuildinfo
 *.log
 .DS_Store

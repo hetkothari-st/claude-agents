@@ -35,10 +35,13 @@ $pkgManager = 'npm'
 if (Test-Path (Join-Path $ProjectRoot 'pnpm-lock.yaml')) { $pkgManager = 'pnpm' }
 elseif (Test-Path (Join-Path $ProjectRoot 'yarn.lock')) { $pkgManager = 'yarn' }
 
+$isWindows = $env:OS -eq 'Windows_NT'
+if ($isWindows) { $pkgManagerExe = "$pkgManager.cmd" } else { $pkgManagerExe = $pkgManager }
+
 $logFile = Join-Path $ProjectRoot '.ui-master/dev-server.log'
 New-Item -ItemType Directory -Force -Path (Split-Path $logFile) | Out-Null
 
-$proc = Start-Process -FilePath $pkgManager `
+$proc = Start-Process -FilePath $pkgManagerExe `
   -ArgumentList 'run','dev' `
   -WorkingDirectory $ProjectRoot `
   -RedirectStandardOutput $logFile `
