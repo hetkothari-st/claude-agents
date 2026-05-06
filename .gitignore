@@ -1,0 +1,7 @@
+node_modules/
+.ui-master/
+tests/fixtures/**/.next/
+tests/fixtures/**/dist/
+tests/fixtures/**/node_modules/
+*.log
+.DS_Store

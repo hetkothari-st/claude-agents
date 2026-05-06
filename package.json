@@ -1,0 +1,14 @@
+{
+  "name": "ui-master",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint:knowledge": "node tests/lint-knowledge.mjs",
+    "test": "node --test tests/lint-knowledge.test.mjs",
+    "test:plugin": "powershell -ExecutionPolicy Bypass -File tests/run.ps1"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}
