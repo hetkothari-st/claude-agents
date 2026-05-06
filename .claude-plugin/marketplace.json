@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "ui-master",
-      "source": "."
+      "source": ".."
     }
   ]
 }
