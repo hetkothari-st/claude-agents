@@ -1,7 +1,8 @@
 {
-  "name": "ui-master-marketplace",
+  "name": "hets-marketplace",
+  "description": "Het's Marketplace",
   "owner": {
-    "name": "ainaman2512",
+    "name": "Het",
     "email": "ainaman2512@gmail.com"
   },
   "plugins": [
