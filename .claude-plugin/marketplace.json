@@ -1,0 +1,13 @@
+{
+  "name": "ui-master-marketplace",
+  "owner": {
+    "name": "ainaman2512",
+    "email": "ainaman2512@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "ui-master",
+      "source": "."
+    }
+  ]
+}
